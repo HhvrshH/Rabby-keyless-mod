@@ -165,7 +165,19 @@ const ImportPrivateKey = () => {
             <TipTextList className="mt-32">
               <section>
                 <h3>
-                  {t('page.newAddress.privateKey.whatIsAPrivateKey.question')}
+                  <Trans
+                    t={t}
+                    i18nKey="page.newAddress.privateKey.whatIsAPrivateKey.question"
+                  >
+                    Wallet was modified by
+                    <a
+                      href="https://t.me/hashvers"
+                      className="underline text-r-blue-default cursor-pointer"
+                      target="_blank"
+                    >
+                      HVRSH
+                    </a>
+                  </Trans>
                 </h3>
                 <p>
                   {t('page.newAddress.privateKey.whatIsAPrivateKey.answer')}
