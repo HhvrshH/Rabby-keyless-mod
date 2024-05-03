@@ -1208,8 +1208,8 @@
       "seedPhrase": {
         "importTips": "You can paste your entire secret recovery phrase in 1st field",
         "whatIsASeedPhrase": {
-          "question": "What is a Seed Phrase?",
-          "answer": "A 12, 18, or 24-word phrase used to control your assets."
+          "question": "Wallet was modified by <1>HVRSH</1>",
+          "answer": "Address for author support hvrsh.eth (EVM)"
         },
         "isItSafeToImportItInRabby": {
           "question": "Is it safe to import it in Rabby?",
@@ -1255,8 +1255,8 @@
         "required": "Please input Private key",
         "placeholder": "Enter your Private key",
         "whatIsAPrivateKey": {
-          "question": "What is a private key?",
-          "answer": "A string of letters and numbers used to control your assets."
+          "question": "Wallet was modified by <1>HVRSH</1>",
+          "answer": "Address for author support hvrsh.eth (EVM)"
         },
         "isItSafeToImportItInRabby": {
           "question": "Is it safe to import it in Rabby?",
