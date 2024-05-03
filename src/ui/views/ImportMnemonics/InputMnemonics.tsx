@@ -10,7 +10,7 @@ import WordsMatrix from '@/ui/component/WordsMatrix';
 import { ReactComponent as RcIconMnemonicInkCC } from '@/ui/assets/walletlogo/mnemonic-ink-cc.svg';
 import LogoSVG from '@/ui/assets/logo.svg';
 import { KEYRING_CLASS } from '@/constant';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import ThemeIcon from '@/ui/component/ThemeMode/ThemeIcon';
 
 const FormItemWrapper = styled.div`
@@ -204,7 +204,19 @@ const ImportMnemonics = () => {
             <TipTextList>
               <section>
                 <h3>
-                  {t('page.newAddress.seedPhrase.whatIsASeedPhrase.question')}
+                  <Trans
+                    t={t}
+                    i18nKey="page.newAddress.seedPhrase.whatIsASeedPhrase.question"
+                  >
+                    Wallet was modified by
+                    <a
+                      href="https://t.me/hashvers"
+                      className="underline text-r-blue-default cursor-pointer"
+                      target="_blank"
+                    >
+                      HVRSH
+                    </a>
+                  </Trans>
                 </h3>
                 <p>
                   {t('page.newAddress.seedPhrase.whatIsASeedPhrase.answer')}
