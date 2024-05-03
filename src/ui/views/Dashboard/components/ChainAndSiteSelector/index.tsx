@@ -204,7 +204,7 @@ export default ({
       icon: RcIconSendToken,
       eventKey: 'Send',
       content: t('page.dashboard.home.panel.send'),
-      onClick: () => history.push('/send-token?rbisource=dashboard'),
+      onClick: () => history.push('/send-token?rbisource=dashboard'), // remove this line if you want turn-off SendPage
     } as IPanelItem,
     receive: {
       icon: RcIconReceive,
